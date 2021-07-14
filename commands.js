@@ -5,7 +5,7 @@ function formattingText(text) {
 }
 
 function random(bot, message, args) {
-    let randomIdx = Math.round(Math.random() * (args.length - 1));
+    let randomIdx = Math.floor(Math.random() * args.length);
     message.channel.send(args[randomIdx]);
 }
 
